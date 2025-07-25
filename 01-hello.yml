@@ -1,12 +1,12 @@
  - name: Just to say Hello
-   hosts: all
+   hosts: 172.31.81.149
    tasks:
     - name: Say Hello
       ansible.builtin.debug:
         msg: "Hello"
 
  - name: Just to say Bye
-   hosts: all
+   hosts: 172.31.81.149
    tasks:
      - name: Say Bye
        ansible.builtin.debug:
