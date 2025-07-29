@@ -10,7 +10,7 @@
     - name: Printing variable at task level
       vars:
         URL: task.google.com
-        ansible.builtin.debug:
+      ansible.builtin.debug:
           msg: URL = {{ URL }}
 
   roles:
