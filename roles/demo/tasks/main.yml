@@ -1,0 +1,4 @@
+- name: print role level variable
+  hosts: localhost
+  vars:
+    URL: play.google.com
