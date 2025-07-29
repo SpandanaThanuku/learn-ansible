@@ -4,9 +4,9 @@
     - name: learn devops
       ansible.builtin.debug:
         msg: start learning devops
-      when: subject == " devops "
+      when: subject == "devops"
 
     - name: learn aws
       ansible.builtin.debug:
           msg: start learning aws
-      when: subject == " aws "
+      when: subject == "aws"
