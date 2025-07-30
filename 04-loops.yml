@@ -13,6 +13,7 @@
       ansible.builtin.debug:
         msg: Learn, {{ item.name }} , cost of learning is {{ item.cost }}
       loop:
-        - { name: "unix" , cost: 100 }
-        - { name: "ansible" , cost: 200 }
-        - { name: "terraform" , cost: 300 }
+        - { name: "unix" , cost: 100 , run: true }
+        - { name: "ansible" , cost: 200 , run: true}
+        - { name: "terraform" , cost: 300 , run: false}
+      when: item.run
