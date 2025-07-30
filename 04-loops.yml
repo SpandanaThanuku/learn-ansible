@@ -9,7 +9,7 @@
         - ansible
         - terraform
 
-    - name: Loop Demo on maps
+    - name: Loop Demo on maps and using conditions
       ansible.builtin.debug:
         msg: Learn, {{ item.name }} , cost of learning is {{ item.cost }}
       loop:
