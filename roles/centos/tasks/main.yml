@@ -1,0 +1,6 @@
+- name: print
+  hosts: localhost
+  tasks:
+    - name: centos
+      ansible.builtin.debug:
+        msg: hello from centos

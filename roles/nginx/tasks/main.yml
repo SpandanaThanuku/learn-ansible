@@ -1,0 +1,6 @@
+- name: print
+  hosts: localhost
+  tasks:
+    - name: nginx
+      ansible.builtin.debug:
+        msg: hello from nginx
