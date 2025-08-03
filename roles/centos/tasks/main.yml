@@ -1,6 +1,6 @@
 - name: print
   hosts: localhost
   tasks:
-    - name: centos
+    - name: hello from centos
       ansible.builtin.debug:
-        msg: hello from centos
+        msg: hello from centos role

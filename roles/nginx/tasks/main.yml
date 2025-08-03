@@ -1,6 +1,6 @@
 - name: print
   hosts: localhost
   tasks:
-    - name: nginx
+    - name: nginx role
       ansible.builtin.debug:
-        msg: hello from nginx
+        msg: hello from nginx role
