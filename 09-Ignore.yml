@@ -3,6 +3,7 @@
   tasks:
     - name: run shell command
       ansible.builtin.shell: exit 1
+      ignore_errors: yes
 
     - name: Say Hi
       ansible.builtin.debug:
