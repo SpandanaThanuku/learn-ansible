@@ -1,0 +1,11 @@
+- name: Ignore
+  hosts: localhost
+  tasks:
+    - name: block
+      block:
+        - name: run shell command
+          ansible.builtin.shell: exit 1
+      rescue:
+        - name: Say Hi
+          ansible.builtin.debug:
+            msg: Hi
