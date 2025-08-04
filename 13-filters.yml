@@ -1,5 +1,5 @@
 - name: Filter
-  host: localhost
+  hosts: localhost
   vars:
     URL: https://nginx.org/download/nginx-1.29.0.zip
   tasks:
